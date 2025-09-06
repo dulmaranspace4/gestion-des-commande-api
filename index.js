@@ -5,7 +5,7 @@ const port = 3000;
 
 app.use(bodyParser.json());
 
-// Définir quelques points de terminaison de base
+// Définir quelques points d'accès de base
 app.get('/commandes', (req, res) => {
     res.send('Liste des commandes');
 });
