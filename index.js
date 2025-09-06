@@ -15,7 +15,8 @@ app.post('/commandes', (req, res) => {
 });
 
 app.put('/commandes/:id', (req, res) => {
-    res.send('Commande modifiée');
+    const id = req.params.id;
+    res.send(`Commande ${id} modifiée`);
 });
 
 app.delete('/commandes/:id', (req, res) => {
