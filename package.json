@@ -1,6 +1,6 @@
 {
   "name": "gestion-des-commande-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "API pour gérer les commandes en ligne.",
   "main": "index.js",
   "scripts": {
