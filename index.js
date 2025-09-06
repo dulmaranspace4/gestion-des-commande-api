@@ -20,7 +20,8 @@ app.put('/commandes/:id', (req, res) => {
 });
 
 app.delete('/commandes/:id', (req, res) => {
-    res.send('Order deleted');
+    const id = req.params.id;
+    res.send(`Order ${id} deleted`);
 });
 
 app.listen(port, () => {
