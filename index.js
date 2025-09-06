@@ -5,24 +5,24 @@ const port = 3000;
 
 app.use(bodyParser.json());
 
-// Définir quelques points d'accès de base
+// Define some basic endpoints
 app.get('/commandes', (req, res) => {
-    res.send('Liste des commandes');
+    res.send('List of orders');
 });
 
 app.post('/commandes', (req, res) => {
-    res.send('Commande ajoutée');
+    res.send('Order added');
 });
 
 app.put('/commandes/:id', (req, res) => {
     const id = req.params.id;
-    res.send(`Commande ${id} modifiée`);
+    res.send(`Order ${id} updated`);
 });
 
 app.delete('/commandes/:id', (req, res) => {
-    res.send('Commande supprimée');
+    res.send('Order deleted');
 });
 
 app.listen(port, () => {
-    console.log(`Serveur en cours d'exécution sur http://localhost:${port}`);
+    console.log(`Server running at http://localhost:${port}`);
 });
